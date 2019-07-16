@@ -2,6 +2,8 @@ package clasesAbstactas;
 
 import java.util.Scanner;
 
+import clasesAbstactas.Producto;
+
 /*instancio producto y calculadora digital*/
 public class ClaseAbstractaPrueba {
 	public static void main(String[] args) {
@@ -29,16 +31,16 @@ public class ClaseAbstractaPrueba {
 		operacion = scan.nextInt();
 		switch (operacion) {
 		case 1:
-			cal.sumar(x, y, total);
+			cal.sumar(x, y);
 			break;
 		case 2:
-			cal.restar(x, y, total);
+			cal.restar(x, y);
 			break;
 		case 3:
-			cal.dividir(x, y, total);
+			cal.dividir(x, y);
 			break;
 		case 4:
-			cal.multiplicar(x, y, total);
+			cal.multiplicar(x, y);
 			break;
 		default:
 			System.out.println("Opcion invalida");

@@ -22,26 +22,26 @@ public class CalculadoraDigital extends CalculadoraAbstracta {
 	}
 
 	@Override
-	public void sumar(double x, double y, double total) {
-		total = x + y;
+	public void sumar(double x, double y) {
+		double total = x + y;
 		System.out.println("El resultado es: " + total);
 	}
 
 	@Override
-	public void dividir(double x, double y, double total) {
-		total = x / y;
+	public void dividir(double x, double y) {
+		double total = x / y;
 		System.out.println("El resultado es: " + total);
 	}
 
 	@Override
-	public void multiplicar(double x, double y, double total) {
-		total = x * y;
+	public void multiplicar(double x, double y) {
+		double total = x * y;
 		System.out.println("El resultado es: " + total);
 	}
 
 	@Override
-	public void restar(double x, double y, double total) {
-		total = x - y;
+	public void restar(double x, double y) {
+		double total = x - y;
 		System.out.println("El resultado es: " + total);
 	}
 
