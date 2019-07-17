@@ -104,17 +104,18 @@ public class Producto implements VentasInterfaz {
 				"Id: " + id + " Nombre del producto: " + nombre + " Tipo: " + tipo + " Precio: $" + precio + " C/Unidad"
 						+ "\n" + "Cantidad: " + cantidad + " Total: " + totalPagar + " Nombre del cliente: " + cliente);
 		if (totalPagar>=20 && totalPagar<=49.99 ) {
-			descuento = 0.95;
+			descuento = 0.05;
 			System.out.println("Su descuento es de 5%: ");
 
 		} else if(totalPagar > 50) {
 			System.out.println("su descuento es de 7%");
-			descuento = 0.93;
+			descuento = 0.07;
 		}else {
+			descuento = 0;
 			System.out.println("No aplica descuento");
 		}
 		
-		totalPagar = totalPagar*descuento;
+		totalPagar -= totalPagar*descuento;
 		System.out.println("Total a pagar con su descuento es de :"+totalPagar);
 			
 		}
