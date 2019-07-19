@@ -7,19 +7,22 @@ package clasesAbstactas;
 public class CalculadoraDigital extends CalculadoraAbstracta {
 	private double x;
 	private double y;
+	private double z;
 	private int operacion;
 	private double total;
 
-	public CalculadoraDigital(double x, double y, int operacion, double total) {
+	public CalculadoraDigital(double x, double y, int operacion, double total, double z) {
 		this.x = x;
 		this.y = y;
+		this.z = z;
 		this.total = total;
 		this.operacion = operacion;
 	}
 
 	public CalculadoraDigital() {
-
+		
 	}
+
 
 	@Override
 	public void sumar(double x, double y) {
@@ -49,7 +52,7 @@ public class CalculadoraDigital extends CalculadoraAbstracta {
 		return x;
 	}
 
-	public void setX(int x) {
+	public void setX(double x) {
 		this.x = x;
 	}
 
@@ -59,6 +62,14 @@ public class CalculadoraDigital extends CalculadoraAbstracta {
 
 	public void setY(double y) {
 		this.y = y;
+	}
+
+	public double getZ() {
+		return z;
+	}
+
+	public void setZ(double z) {
+		this.z = z;
 	}
 
 	public double getTotal() {

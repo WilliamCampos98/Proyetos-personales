@@ -93,11 +93,6 @@ public class Producto implements VentasInterfaz {
 	}
 
 	@Override
-	public void calcularDescuento() {
-
-	}
-
-	@Override
 	public void datosCompletos(String tipo) {
 		System.out.println("Datos de la compra de " + tipo);
 		System.out.println(

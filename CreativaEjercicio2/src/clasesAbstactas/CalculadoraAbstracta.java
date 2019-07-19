@@ -5,7 +5,7 @@ package clasesAbstactas;
   que una clase abstracta no permite la multiple herencia*/
 public abstract class CalculadoraAbstracta {
 	/* metodo abstracto sin implementacion/sin cuerpo, cuando se crea un metodo
-	   abstracto la clse debe definirse como abstracto
+	   abstracto la clase debe definirse como abstracto
 	 */
 	public abstract void sumar(double x, double y);
 
@@ -14,8 +14,9 @@ public abstract class CalculadoraAbstracta {
 	public abstract void restar(double x, double y);
 
 	public abstract void multiplicar(double x, double y);
+	
 	/*las clases abstractas suelen declararse en donde subclases se espera que
 	 * requieran de dichos metodos de manera generica y atravez del polimofismo modificar
-	 * el mtedo
+	 * el metodo
 	 */
 }

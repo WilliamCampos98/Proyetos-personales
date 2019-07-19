@@ -5,17 +5,19 @@ import java.util.Scanner;
 /*instancio producto y calculadora digital*/
 public class ClaseAbstractaPrueba {
 	public static void main(String[] args) {
-		
+
 		System.out.println("Aqui comienza la calculadora");
 		/*
 		 * la instancie con constructor vacio porque no usare sus datos solo sus metodos
 		 */
 		CalculadoraDigital cal = new CalculadoraDigital();
 		Scanner scan = new Scanner(System.in);
-		/*cree una varaible local para el metodo de area de un circulo statico
-		 y use math.pi para que me diera el valor de Pi aunque pude usar la variable
-		 de la clase que estaba con un valor estatico la calculadora funciona normal 
-		 solo agregue el metodo static*/
+		/*
+		 * cree una varaible local para el metodo de area de un circulo statico y use
+		 * math.pi para que me diera el valor de Pi aunque pude usar la variable de la
+		 * clase que estaba con un valor estatico la calculadora funciona normal solo
+		 * agregue el metodo static
+		 */
 		int operacion;
 		double x;
 		System.out.println("Bienvenido, Escoge la opcion");
@@ -42,7 +44,7 @@ public class ClaseAbstractaPrueba {
 		case 5:
 			System.out.println("Ingrese el radio del circulo");
 			x = scan.nextDouble();
-			 System.out.println("El area del circulo es: "+CalculadoraDigital.calcularAreaCirculo(x));
+			System.out.println("El area del circulo es: " + CalculadoraDigital.calcularAreaCirculo(x));
 			break;
 		default:
 			System.out.println("Opcion invalida");

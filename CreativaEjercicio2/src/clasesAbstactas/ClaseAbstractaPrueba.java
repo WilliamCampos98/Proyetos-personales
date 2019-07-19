@@ -17,7 +17,7 @@ public class ClaseAbstractaPrueba {
 		 */
 		CalculadoraDigital cal = new CalculadoraDigital();
 		Scanner scan = new Scanner(System.in);
-		double x, y, total = 0;
+		double x, y = 0;
 		int operacion;
 		System.out.println("Ingresa un digito:");
 		x = scan.nextDouble();
@@ -44,6 +44,7 @@ public class ClaseAbstractaPrueba {
 			break;
 		default:
 			System.out.println("Opcion invalida");
+			scan.close();
 			break;
 		}
 	}
